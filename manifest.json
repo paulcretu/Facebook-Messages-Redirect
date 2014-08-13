@@ -1,0 +1,13 @@
+{
+  "name": "Facebook Messages Redirect",
+  "description": "A small Chrome extension that redirects facebook.com to facebook.com/messages when you type it in the address bar, so that you don't unconsiously keep ending up on Facebook, scrolling through your news feed like a zombie",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "background": {"scripts":["background.js"]},
+  "permissions": [
+    "webRequest",
+    "*://facebook.com/",
+    "*://www.facebook.com/",
+    "webRequestBlocking"
+  ]
+}
